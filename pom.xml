@@ -7,6 +7,16 @@
     <version>1.0-SNAPSHOT</version>
     <name>Day6Hibernate Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <!--<build>-->
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>${basedir}/src/main/java</directory>-->
+                <!--<includes>**/*.xml</includes>-->
+            <!--</resource>-->
+        <!--</resources>-->
+    <!--</build>-->
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

@@ -27,7 +27,6 @@ public class Student {
         this.gender = gender;
         this.age = age;
     }
-
     @Override
     public String toString() {
         return "Student{" +

@@ -22,6 +22,6 @@
          <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!--加载映射文件-->
-        <mapping resource="com/lanou3g/domain/Student.hbm.xml"/>
+        <mapping resource="Student.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
