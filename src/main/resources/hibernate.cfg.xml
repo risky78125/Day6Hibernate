@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/day6hibernate</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <!--配置方言, Hibernate会根据方言的不同生成不同的SQL语句-->
+        <!--如果jdbc的版本在5.x以上, 使用MySQL5Dialect-->
+        <!--否则使用MySQLDialect-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!--设置为true, 那么在项目运行时会打印出sql语句-->
+        <property name="show_sql">true</property>
+        <!--对打印的sql语句进行格式化-->
+        <property name="format_sql">true</property>
+        <!-- DB schema will be updated if needed -->
+        <!--看文档-->
+         <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!--加载映射文件-->
+        <mapping resource="com/lanou3g/domain/Student.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
